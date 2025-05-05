@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
 /*==================== EmailJS para el formulario de contacto ====================*/
 // Inicializa EmailJS con tu User ID
 (function () {
-  emailjs.init("zCmjhDtymOKgzUVIG");
+  emailjs.init("XK2ORibVEcDAv5rhr");  /*zCmjhDtymOKgzUVIG*/
 })();
 
 function sendMail(e) {
@@ -198,8 +198,8 @@ function sendMail(e) {
     mensaje: document.getElementById("mensaje").value,
   };
 
-  const serviceID = "service_iu3j1bc";
-  const templateID = "template_gnlir8h";
+  const serviceID = "service_t568n5s";            /*service_iu3j1bc*/
+  const templateID = "template_2pwkhlm";           /*template_gnlir8h*/
 
   emailjs.send(serviceID, templateID, params)
     .then((res) => {
